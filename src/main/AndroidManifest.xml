@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.league.pubgleague">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.league.pubgleague.pubgleague"
+        android:allowBackup="true"
+        android:icon="@drawable/pubgleague"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/pubgleague"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.league.pubgleague.ResultDetails"></activity>
+        <activity
+            android:name="com.league.pubgleague.BattleDetails"
+            android:parentActivityName="com.league.pubgleague.MainActivity" />
+        <activity
+            android:name="com.league.pubgleague.Wallet"
+            android:parentActivityName="com.league.pubgleague.MainActivity" />
+        <activity android:name="com.league.pubgleague.Register" />
+        <activity android:name="com.league.pubgleague.Login" />
+        <activity android:name="com.league.pubgleague.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.league.pubgleague.MainActivity" />
+    </application>
+
+</manifest>

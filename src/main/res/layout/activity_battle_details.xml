@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.league.pubgleague.BattleDetails">
+
+    <include
+        android:id="@+id/battle_toolbar"
+        layout="@layout/app_bar_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/battle_toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/battle_toolbar">
+
+            <ImageView
+                android:id="@+id/battleimg"
+                android:layout_width="match_parent"
+                android:layout_height="258dp"
+                android:layout_below="@id/battle_toolbar"
+                android:src="@drawable/dims"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/battletitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/battleimg"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:textColor="@color/colorAccent"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/battletime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/battletitle"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:textSize="18dp" />
+
+
+            <TextView
+                android:id="@+id/battleversion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/battletime"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Version : TPP"
+                android:textSize="18dp" />
+
+
+            <TextView
+                android:id="@+id/battlemap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/battleversion"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Map : Erangle"
+                android:textSize="18dp" />
+
+
+            <TextView
+                android:id="@+id/battletype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/battlemap"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Type : Solo"
+                android:textSize="18dp" />
+
+
+            <TextView
+                android:id="@+id/battlefee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/battleversion"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Entry Fee : ₹10"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/battlekill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/battlemap"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Per kill : ₹5"
+                android:textSize="18dp" />
+
+
+
+            <TextView
+                android:id="@+id/battlewinners"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top 3 Prizes"
+                android:fontFamily="@font/nunito_semibold"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:layout_below="@id/battletype"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textSize="24dp"/>
+
+
+            <TextView
+                android:id="@+id/battlewinprizes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/battlewinners"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="1st : ₹100 \n 2nd : ₹75 \n 3rd : ₹50"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/battleroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room Credentials"
+                android:fontFamily="@font/nunito_semibold"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:layout_below="@id/battlewinprizes"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textSize="24dp"/>
+
+
+            <TextView
+                android:id="@+id/battleroomdetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/battleroom"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Room Id     : ---- \n Password : ----"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/battlerules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rules"
+                android:fontFamily="@font/nunito_semibold"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:layout_below="@id/battleroomdetails"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/battlerulesstring"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_rules"
+                android:fontFamily="@font/nunito_semibold"
+                android:layout_below="@id/battlerules"
+                android:layout_margin="16dp"
+                android:textSize="16dp"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/battlejoinbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/PUBGColor"
+        android:text="Join"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

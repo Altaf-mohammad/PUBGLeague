@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.league.pubgleague.WithdrawFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/withdrawnote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note : Withdrawal amount will be send to your registered PayTm Number"
+                android:fontFamily="@font/nunito_semibold"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="24dp"
+                />
+
+            <ImageView
+                android:id="@+id/withdrawimageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/paytm"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/withdrawnote"/>
+
+
+            <TextView
+                android:id="@+id/withdrawwallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/withdrawimageView"
+                android:layout_centerHorizontal="true"
+                android:text="Wallet Amount : "
+                android:textColor="@color/colorAccent"
+                android:textSize="24dp" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/withdrawalcard"
+                android:layout_width="match_parent"
+                android:layout_height="265dp"
+                android:layout_below="@+id/withdrawwallet"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/PUBGColor"
+                android:backgroundTint="@color/colorAccent"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/withdrawcardtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Withdrawal Card"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textSize="24dp"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/withdrawalphnum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/withdrawcardtext"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginRight="18dp"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:hint="PayTm Number"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textColorHint="#FFEAEED1" />
+
+
+                    <EditText
+                        android:id="@+id/withdrawalamount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/withdrawalphnum"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginRight="18dp"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:hint="Withdrawal Amount"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textColorHint="#FFEAEED1" />
+
+
+                    <Button
+                        android:id="@+id/withdrawbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/withdrawalamount"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="18dp"
+                        android:background="@color/PUBGColor"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="Send Request"
+                        android:textAllCaps="false" />
+
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/withdrawalstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/withdrawalcard"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:text="Status : No Withdrawal Yet"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/withdrawrules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/withdrawalstatus"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="@string/withdraw_rules" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.league.pubgleague.DepositFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+
+    <TextView
+        android:id="@+id/withdrawnote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Note : Pay money to the provided number with PayTm and send the details below."
+        android:fontFamily="@font/nunito_semibold"
+    android:layout_marginLeft="18dp"
+    android:layout_marginRight="18dp"
+    android:layout_marginTop="24dp"
+        />
+
+    <ImageView
+        android:id="@+id/withdrawimageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/paytm"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/withdrawnote"/>
+
+
+    <TextView
+        android:id="@+id/withdrawwallet"
+        android:layout_below="@id/withdrawimageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8341722799"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="24dp"
+        />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/depositcard"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@+id/withdrawwallet"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/PUBGColor"
+        android:backgroundTint="@color/colorAccent"
+        app:cardCornerRadius="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/withdrawcardtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deposit Card"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                />
+
+
+            <EditText
+                android:id="@+id/depositphonenum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/withdrawcardtext"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="18dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:hint="PayTm Number"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="#DAD9D9" />
+
+            <EditText
+                android:id="@+id/depositamount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/depositphonenum"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="18dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:hint="Amount Paid"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="#DAD9D9" />
+
+            <EditText
+                android:id="@+id/depositid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/depositamount"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="18dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:hint="PayTm Transaction Id"
+                android:textColor="@color/colorPrimaryDark"
+                android:cursorVisible="true"
+                android:textColorHint="#DAD9D9" />
+
+            <EditText
+                android:id="@+id/deposittime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/depositid"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="18dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:hint="DD/MM/YYYY at HH:MM"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="#DAD9D9" />
+
+
+            <Button
+                android:id="@+id/depositbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/deposittime"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/PUBGColor"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Send Request"
+                android:textAllCaps="false" />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/depositstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/depositcard"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:text="Status : No Deposit Yet"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/depositrules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/depositstatus"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="@string/deposit_rules" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

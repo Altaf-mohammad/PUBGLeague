@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.league.pubgleague.ResultDetails">
+
+    <include
+        android:id="@+id/result_page_toolbar"
+        layout="@layout/app_bar_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/result_page_toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/result_page_toolbar">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/resultmatchnamecard"
+                android:layout_width="match_parent"
+                android:background="@color/PUBGColor"
+                app:contentPaddingRight="18dp"
+                android:layout_margin="18dp"
+                app:cardCornerRadius="8dp"
+                android:backgroundTint="@color/PUBGColor"
+                android:layout_height="70dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/resultmatchname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="Match Name"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/resultmatchtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/resultmatchname"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="Match time"
+                        android:textAlignment="center"
+                        android:textSize="16dp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/resultmatchdetailscard"
+                android:layout_width="match_parent"
+                android:background="@color/PUBGColor"
+                app:contentPaddingRight="18dp"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="18dp"
+                android:backgroundTint="@color/PUBGColor"
+                android:layout_below="@+id/resultmatchnamecard"
+                android:layout_height="150dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="16dp"
+                                android:layout_weight="1"
+                                android:textColor="@color/colorAccent"
+                                android:text="#1 PRIZE" />
+
+                            <TextView
+                                android:id="@+id/winner1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="8dp"
+                                android:layout_weight="1"
+                                android:textColor="@color/colorAccent"
+                                android:text="₹0"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:textColor="@color/colorAccent"
+                                android:layout_marginTop="16dp"
+                                android:layout_weight="1"
+                                android:text="#2 PRIZE" />
+
+                            <TextView
+                                android:id="@+id/winner2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="8dp"
+                                android:textColor="@color/colorAccent"
+                                android:layout_weight="1"
+                                android:text="₹0"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="16dp"
+                                android:textColor="@color/colorAccent"
+                                android:layout_weight="1"
+                                android:text="#3 PRIZE" />
+
+                            <TextView
+                                android:id="@+id/winner3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="8dp"
+                                android:textColor="@color/colorAccent"
+                                android:layout_weight="1"
+                                android:text="₹0"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="8dp"
+                                android:textColor="@color/colorAccent"
+                                android:layout_weight="1"
+                                android:text="PER KILL" />
+
+                            <TextView
+                                android:id="@+id/perkills"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="16dp"
+                                android:textColor="@color/colorAccent"
+                                android:layout_weight="1"
+                                android:text="₹0"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="8dp"
+                                android:layout_weight="1"
+                                android:textColor="@color/colorAccent"
+                                android:text="ENTRY FEE" />
+
+                            <TextView
+                                android:id="@+id/entryfee"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="16dp"
+                                android:layout_weight="1"
+                                android:textColor="@color/colorAccent"
+                                android:text="₹0"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/resultmatchwinnercard"
+                android:layout_width="match_parent"
+                android:background="@color/PUBGColor"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_below="@+id/resultmatchdetailscard"
+                android:backgroundTint="@color/PUBGColor"
+                android:layout_height="70dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/resultmatchwinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WINNER WINNER CHICKEN DINNER"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_centerVertical="true"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:layout_centerHorizontal="true"
+                        />
+
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/resultmatchwinnercarddetails"
+                android:layout_width="match_parent"
+                android:background="@color/PUBGColor"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_below="@+id/resultmatchwinnercard"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_height="55dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="1"
+                            android:text="#"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="1"
+                            android:text="Name"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="1"
+                            android:text="Kills"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="1"
+                            android:text="Amount"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/battle_winner_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resultmatchwinnercarddetails"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp" />
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/resultmatchtotalcard"
+                android:layout_width="match_parent"
+                android:background="@color/PUBGColor"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_below="@+id/battle_winner_list_view"
+                android:backgroundTint="@color/PUBGColor"
+                android:layout_height="70dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/resultmatchtotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FULL RESULT"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_centerVertical="true"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:layout_centerHorizontal="true"
+                        />
+
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/resultmatchtotalcarddetails"
+                android:layout_width="match_parent"
+                android:background="@color/PUBGColor"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_below="@+id/resultmatchtotalcard"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_height="55dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="1"
+                            android:text="#"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="1"
+                            android:text="Name"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="1"
+                            android:text="Kills"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="1"
+                            android:text="Amount"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/battle_total_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resultmatchtotalcarddetails"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp" />
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

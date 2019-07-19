@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">PUBG League</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="deposit_rules">Rules : \n
+    1.Minimum amount to deposit is ₹10.\n
+    2.Do not fake/spam any information.\n
+    4.Deposited amount will be added to wallet within 12hrs.\n
+    3.You can contact us in mail for any queries.\n\n
+         If in case you spam any information your account will be removed
+        without your intimation and your earnings will be cancelled.
+    </string>
+
+    <!--a99bb734-cbdd-4a72-bbe8-815b74c7554d-->
+
+    <string name="withdraw_rules">Rules : \n
+    1.Minimum amount to withdraw is ₹10.\n
+    2.Requested amount will be withdrawed within 12hrs to your PayTm number.\n
+    3.You can contact us in mail for any queries.
+    </string>
+
+    <string name="game_rules"> \n
+        1. Please note that the listed entry fee is per individual and not
+        the squad/duo team.\n\n
+
+        2. Each member of a team (Squad or Duo) has to pay the entry
+        fee and register individually for the match or tournament.\n\n
+
+        3. If in anyway you fail to join the room by the match start time
+        then we are not responsible for it. Refund in such cases will not be
+        processed. So make sure to join on time.\n\n
+
+        4. Do not share the Room ID and Password with anyone who has
+        not joined the match. If you are found doing so, your account may
+        get terminated and all the winnings will be lost.\n\n
+
+        5. Griefing and Teaming is against the game rules. Any participant
+        found doing so will be disqualified and their prizes will be lost.\n\n
+
+        7. Room ID and Password will be shared in the app before 15
+        minutes of match start time.\n\n
+
+        8. Match will start after 15 minutes of Sharing Room ID and
+        Password.\n\n
+
+        9. Make sure to grab ID and Password before the Match Start
+        Time.\n\n
+
+        10. Make sure you join the Match Room ASAP, before the match
+        starts.\n\n
+
+        11. This match is Paid match. To participate, you have to pay the
+        entry fee amount. There are total 100 spots available. Join it
+        before all the spots are filled.\n\n
+
+
+        12. Once you join the match custom room, do not keep changing
+        your position. If you do so, you may get kicked from the room.\n\n
+
+        13. Spots are given on the First Come First Basis.\n\n
+
+        14. Last standing man gets the Chicken Dinner Award.\n\n
+
+        15. You will be also rewarded for each kill. Check the rewards
+        details above.\n\n
+
+        16. Use only Mobile Device to Join Match. Do not use any Hacks
+        or Emulators.\n\n
+
+        17. If anyone found violating these rules then immediate action
+        will be taken and respective accounts may get banned and
+        rewards may be abandoned.\n\n
+
+        18. If you have any queries then contact us on
+        www.pubgleague@gmail.com.\n\n
+    </string>
+</resources>
